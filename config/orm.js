@@ -66,6 +66,8 @@ var orm = {
 
     connection.query(queryString, vals, function(err, result) {
       if (err) {
+        console.log("here! bad CreateOne orm.js");
+        
         throw err;
       }
 
@@ -92,5 +94,5 @@ var orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;

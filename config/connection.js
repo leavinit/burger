@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 
 // Makes connection.
 connection.connect(function(error) {
-  if (err) {
+  if (error) {
     console.log("error connecting to database: " + error.stack);
     return;
   }
