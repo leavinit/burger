@@ -1,20 +1,23 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
-  }
+    background: #4171d8;
+    list-style-type: none;
+    color : white;
+}
   
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
+  /* .create-update-form {
     padding: 5px;
     margin: 5px;
     background: aqua;
-  }
+  } */
   
   .form-group {
-    margin-bottom: 5px;
+    margin: 0px 10px;
   }
+
   
