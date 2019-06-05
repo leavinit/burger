@@ -1,4 +1,5 @@
 $(function() {
+  
   $("#eaten button").toggleClass("btn-primary").css("color","white");  
   $(".change-devoured").on("click", function(event) {
 
@@ -52,6 +53,7 @@ $(function() {
     $("#resetBtn").on("click", function(event){
       // alert('working');
       $("#eaten button").trigger("click");
+  
     });
     //
   });
