@@ -1,5 +1,5 @@
 $(function() {
-  
+
   $("#eaten button").toggleClass("btn-primary").css("color","white");  
   $(".change-devoured").on("click", function(event) {
 
@@ -54,6 +54,12 @@ $(function() {
       // alert('working');
       $("#eaten button").trigger("click");
   
+    });
+    $("li").hover(function(){
+      $(this).css("border-color","#13203d")
+    },
+    function(){
+      $(this).css("border-color","white")
     });
     //
   });
