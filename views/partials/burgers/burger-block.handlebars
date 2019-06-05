@@ -4,7 +4,10 @@
 	
 	<button class="change-devoured float-right btn-primary" data-id="{{id}}" data-newdevoured="{{devoured}}">
 		
-			{{#if devoured}}Eat the Burger!{{else}}Relist the burger!{{/if}}
+			{{#if devoured}}Eat the Burger!
+				<i class="material-icons">fastfood</i>
+			{{else}}<i id='icon' class="material-icons">undo</i>
+			{{/if}}
 		
 	</button>
 	</h5>

@@ -6,7 +6,7 @@ $(function() {
       var newDevouredState = {
         devoured: newDevoured
       };
-  
+
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
@@ -16,6 +16,7 @@ $(function() {
           console.log("changed devoured to", newDevoured);
           // Reload the page to get the updated list
           location.reload();
+          
         }
       );
     });
@@ -26,7 +27,8 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#burger").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
+        devoured: 0 
+        //$("[name=devoured]:checked").val().trim()
       };
   
       // Send the POST request.

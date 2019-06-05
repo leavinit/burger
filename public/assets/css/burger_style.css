@@ -1,3 +1,67 @@
+/* #readyToEat,#eaten{
+  
+    background-color: black;
+} */
+
+.jumbotron {
+    padding: 1em 1em;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    background-color: #13203d;
+    bottom: 29%; 
+    /* h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        .btn {
+            padding: 0.5em;
+        }
+    } */
+}
+.container{
+    background-color: #8a97b4;
+    /* max-height : 90%; */
+    position:absolute; 
+    top:25.5%;
+    z-index : -1; 
+    bottom:10%; 
+    left:0px; 
+    right:0px; 
+    overflow:auto;
+    
+}
+#titles h2{
+    padding : 15px 10px;
+    margin-left: 10%;
+}
+
+#newBurger{
+    background-color: #13203d;
+    color : white;
+    position:absolute; bottom:0px; height:10%; left:0px; right:0px; overflow:hidden;
+}
+#newBurger input{
+    border-radius : 4px;
+}
+li {
+    border-radius : 7px;
+    border : 1px solid white;
+
+}
+#eaten li{
+    background : grey;
+}
+#eaten button{
+    background : grey;
+}
+#eaten input{
+    border-radius : 2px;
+}
+#icon{
+    background : grey;
+}
 li {
     padding: 5px;
     margin: 5px;
@@ -5,9 +69,13 @@ li {
     list-style-type: none;
     color : white;
 }
-  
+li h5{
+    padding: 5px;
+}
+
   .label {
     font-weight: bold;
+
   }
   
   /* .create-update-form {
@@ -15,9 +83,9 @@ li {
     margin: 5px;
     background: aqua;
   } */
-  
-  .form-group {
+
+  /* .form-group {
     margin: 0px 10px;
-  }
+  } */
 
   
