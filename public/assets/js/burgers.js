@@ -55,6 +55,7 @@ $(function() {
       $("#eaten button").trigger("click");
   
     });
+    //set up a hover effect on all list elements
     $("li").hover(function(){
       $(this).css("border-color","#13203d")
     },

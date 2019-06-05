@@ -1,11 +1,14 @@
+{{!-- Burger-block partial determines what type of button a burger receives
+ based upon it's devoured boolean --}}
 <li>
 	<h5>
 		{{burger_name}}	
 	
 	<button class="change-devoured float-right btn-primary" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		
+			{{!-- Uneaten burgers get the fast food icon --}}
 			{{#if devoured}}Eat the Burger!
 				<i class="material-icons">fastfood</i>
+			{{!-- Eaten burgers get the undo icon --}}
 			{{else}}<i id='icon' class="material-icons">undo</i>
 			{{/if}}
 		
