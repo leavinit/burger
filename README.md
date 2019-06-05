@@ -1,6 +1,6 @@
 # Burger App ![alt text][logo]
 
-[logo]: https://github.com/leavinit/burger/blob/master/public/assets/img/burgerSmall.png?raw=true "Logo Title Text 2"
+[logo]: https://github.com/leavinit/burger/blob/master/public/assets/img/burgerSmall.png?raw=true "Burger"
 
 
 A demonstration of the MVC design pattern using SQL, Express, and Handlebars.  The sample app allows the user to create a burger and choose which burger to eat.
