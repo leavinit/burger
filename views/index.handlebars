@@ -10,26 +10,28 @@
             <h2>Burgers ready to be devoured!</h2>    
         </div>
         <div class="col-md-6">
-            <h2>Burgers destroyed! Yum</h2>
+            <h2>Burgers destroyed! Yum.</h2>
         </div>
     </div>
     <div id="allBurgers" class="row">
         {{!-- <div class="col md-1"></div> --}}
         <div id="readyToEat" class="col md-6 well h-75 d-inline-block">
-            
+            {{!-- Code to sort burgers readyToEat only has not devoured burgers --}}
             <ul>
             {{#each burgers}}
                 {{#unless devoured}}
+                {{!-- Sends the burger to burger-block partial --}}
                 {{> burgers/burger-block devoured=true}}
                 {{/unless}}
             {{/each}}
             </ul>
         </div>
         <div id="eaten" class="col md-6 well h-75 d-inline-block">
-            
+            {{!-- Eaten burgers have devoured=true --}}
             <ul>
             {{#each burgers}}
                 {{#if devoured}}
+                {{!-- Sends the burger to burger-block partial --}}
                 {{> burgers/burger-block devoured=false}}
                 {{/if}}
             {{/each}}
@@ -42,7 +44,7 @@
 <div class="row">
         <div id="newBurger" class="col-md-12 navbar fixed-bottom">
             <h3>Add a new burger to the menu:</h3>
-            <form class="create-form form-horizontal">
+            <form class="create-form form-horizontal align-right">
 
                 <span class="form-group">
                     <label for="burger">New Burger:</label>
@@ -50,6 +52,8 @@
                 </span>
 
                 <button type="submit" class="btn-sm">Add Burger</button>
-            </form>
+                </form>
+                <button id="resetBtn" class="btn-sm">Reset</button>
+            
         </div>
     </div>
