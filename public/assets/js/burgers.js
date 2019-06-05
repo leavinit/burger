@@ -1,8 +1,15 @@
 $(function() {
-
+  if ($("#readyToEat li").length == 0){
+    // alert('empty');
+    $("#titleImg").attr("src","./assets/img/sad.png");
+  }
+  else{
+    $("#titleImg").attr("src","./assets/img/burgerImage.png");
+  }
   $("#eaten button").toggleClass("btn-primary").css("color","white");  
   $(".change-devoured").on("click", function(event) {
-
+      //displays sad face if out of burgers
+      
       //builds a put request by getting the id and next devoured state from the data attrs
       var id = $(this).data("id");
       var newDevoured = $(this).data("newdevoured");
@@ -62,6 +69,7 @@ $(function() {
     function(){
       $(this).css("border-color","white")
     });
+
     //
   });
   
